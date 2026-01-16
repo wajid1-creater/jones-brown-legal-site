@@ -16,7 +16,7 @@ export default function Header() {
         <Link href="/" className="flex items-center">
           <Image
             src="/assets/logo.png"
-            alt="LegalSite Logo"
+            alt=""
             width={50}
             height={40}
             priority
