@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -13,13 +12,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
 
         {/* LOGO */}
-        <Link href="/" className=" items-center">
-          <Image
-            src="/assets/logo.png"
-            alt=""
-            width={50}
-            height={40}
-            priority
+        <Link href="/" className="flex items-center">
+          <img
+            src="/assets/logo-1.svg"  // ✅ normal img works on Vercel
+            alt="LegalSite Logo"
+            className="w-[50px] h-auto"
           />
         </Link>
 
