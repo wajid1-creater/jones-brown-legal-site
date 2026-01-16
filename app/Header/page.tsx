@@ -13,7 +13,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
 
         {/* LOGO */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className=" items-center">
           <Image
             src="/assets/logo.png"
             alt=""
