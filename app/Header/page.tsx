@@ -15,7 +15,7 @@ export default function Header() {
         {/* LOGO */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/assets/logo-1.svg"
+            src="/assets/logo.png"
             alt="LegalSite Logo"
             width={50}
             height={40}
