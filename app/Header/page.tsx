@@ -14,26 +14,23 @@ export default function Header() {
         {/* LOGO */}
         <Link href="/" className="flex items-center">
           <img
-            src="/assets/logo-1.svg"   // ✅ Make sure this file is in /public/assets/logo.svg
-            alt="LegalSite Logo"
-            className="w-[50px] h-auto"
+            src="/assets/logo-1 copy.svg"
+            alt="Jones & Brown Legal"
+            width="50"
+            height="40"
           />
         </Link>
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex items-center gap-8 text-lg">
-          <Link href="/services" className="hover:text-gray-300 transition">
-            Services
-          </Link>
-          <Link href="/consultation" className="hover:text-gray-300 transition">
-            Schedule a Consult
-          </Link>
+          <Link href="/services">Services</Link>
+          <Link href="/consultation">Schedule a Consult</Link>
         </nav>
 
-        {/* MOBILE MENU BUTTON */}
+        {/* MOBILE BUTTON */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl focus:outline-none"
+          className="md:hidden text-2xl"
         >
           ☰
         </button>
