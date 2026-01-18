@@ -24,7 +24,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-[80vh] bg-cover bg-center flex items-end md:items-center"
+      className="relative min-h-[90vh]  bg-cover bg-center flex items-end md:items-center"
       style={{ backgroundImage: "url('/assets/image copy.png')" }}
     >
       {/* Overlay */}
@@ -37,7 +37,7 @@ export default function Hero() {
         mb-16 md:mb-0 ${animate ? "blink-once" : ""}`}
       >
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-wide mt-20">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-wide mt-110">
           Jones & Brown Legal
         </h1>
 
@@ -45,7 +45,7 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row w-full gap-6 md:items-end">
 
           {/* Left text */}
-          <p className="text-lg sm:text-xl md:text-3xl font-extrabold max-w-xl mt-30">
+          <p className="text-lg sm:text-xl md:text-3xl font-extrabold max-w-xl mt-15">
             Deep expertise, decisive courtroom presence
           </p>
 
