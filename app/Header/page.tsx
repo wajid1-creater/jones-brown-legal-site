@@ -14,7 +14,7 @@ export default function Header() {
         {/* LOGO */}
         <Link href="/" className="flex items-center">
           <img
-            src="/assets/logo-1.svg"  // ✅ normal img works on Vercel
+            src="/assets/logo-1.svg"   // ✅ Make sure this file is in /public/assets/logo.svg
             alt="LegalSite Logo"
             className="w-[50px] h-auto"
           />
@@ -33,7 +33,7 @@ export default function Header() {
         {/* MOBILE MENU BUTTON */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl"
+          className="md:hidden text-2xl focus:outline-none"
         >
           ☰
         </button>
