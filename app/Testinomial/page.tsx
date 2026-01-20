@@ -6,7 +6,7 @@ import Link from "next/link";
 const testimonials = [
   {
     text: `“Jones & Brown Legal handled my estate planning with such care and professionalism.
-They listened to my concerns and made the process clear and straightforward.
+They listened to.
 I now have complete peace of mind knowing my family's future is secure.”`,
     author: "— David L., Business Owner",
   },
@@ -50,25 +50,26 @@ export default function Testimonials() {
 
         {/* DESCRIPTION */}
         <p className="text-black text-base sm:text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
-          We believe that our clients' experiences speak volumes <br/> about the quality
-          of our legal services. Here's what some of <br/>them have to say:
+          We believe that our clients' experiences speak volumes <br />
+          about the quality of our legal services. Here's what some of <br />
+          them have to say:
         </p>
 
-        {/* CARD */}
-        <div className="bg-[#f6f6f6] max-w-md sm:max-w-lg mx-auto p-6 sm:p-8 rounded-xl shadow">
+        {/* CARD (FIXED SIZE) */}
+        <div className="bg-[#f6f6f6] max-w-md sm:max-w-lg mx-auto p-6 sm:p-8 rounded-xl shadow min-h-[300px] flex flex-col justify-between">
 
           {/* TEXT */}
-          <p className="text-base sm:text-lg md:text-xl text-black mb-6 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-black leading-relaxed">
             {testimonials[index].text}
           </p>
 
           {/* AUTHOR */}
-          <p className="text-black font-semibold mb-8">
+          <p className="text-black font-semibold mt-6">
             {testimonials[index].author}
           </p>
 
           {/* CONTROLS */}
-          <div className="flex items-center justify-center gap-5">
+          <div className="flex items-center justify-center gap-5 mt-6">
 
             {/* LEFT ARROW */}
             <button

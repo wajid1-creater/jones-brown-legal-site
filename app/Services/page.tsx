@@ -28,7 +28,7 @@ export default function ServicesPreview() {
 
             {/* LEFT TAG */}
             <div>
-              <span className="block text-xs tracking-widest font-bold opacity-80">
+              <span className="block text-1xl tracking-widest font-bold opacity-80 ">
                 WHAT WE OFFER
               </span>
             </div>

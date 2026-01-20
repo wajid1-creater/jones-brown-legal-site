@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-20">
 
         {/* TOP ROW */}
-        <div className="flex flex-col md:flex-row items-start justify-between gap-12 mb-20">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-12 mb-16">
 
           {/* LEFT */}
           <div>
@@ -32,10 +32,9 @@ export default function Footer() {
               alt="Jones & Brown Logo"
               width={70}
               height={70}
-              className="mb-8"
+              className="mb-6 "
             />
-
-            <p className="text-lg max-w-md font-sans">
+            <p className="text-lg max-w-md font-sans mt-15">
               Deep expertise, decisive courtroom presence
             </p>
           </div>
@@ -47,25 +46,25 @@ export default function Footer() {
         </div>
 
         {/* INFO ROW */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
 
           {/* EMAIL + PHONE */}
-          <div className="space-y-1">
+          <div className="space-y-0.5">
             <p>hello@figma.com</p>
             <p>(555) 123-4567</p>
           </div>
 
           {/* LOCATION */}
-          <div className="space-y-1 md:text-center">
+          <div className="space-y-0.5 ">
             <p>123 Candyland Lane</p>
             <p>Suite 123</p>
             <p>Los Angeles, CA 94117</p>
           </div>
 
           {/* SOCIAL */}
-          <div className="flex flex-col gap-2 md:items-end">
-            <Link href="#" className="hover:underline">Facebook</Link>
+          <div className="flex flex-col gap-1">
             <Link href="#" className="hover:underline">Instagram</Link>
+            <Link href="#" className="hover:underline">facebook</Link>
             <Link href="#" className="hover:underline">LinkedIn</Link>
             <Link href="#" className="hover:underline">Bluesky</Link>
           </div>
@@ -73,7 +72,7 @@ export default function Footer() {
         </div>
 
         {/* BOTTOM */}
-        <div className="mt-16 text-sm font-sans">
+        <div className="mt-12 text-sm font-sans">
           <p>
             Jones & Brown Legal <br />
             © 2025 All Rights Reserved
