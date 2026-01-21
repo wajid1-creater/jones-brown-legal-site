@@ -60,7 +60,7 @@ export default function ServicesPreview() {
 
               {/* BUTTON */}
               <Link
-                href="/services"
+                href="/Servicessection"
                 className="inline-block mt-10 border border-white px-7 py-2.5 
                 text-sm md:text-lg rounded-full bg-white text-black font-sans
                 hover:bg-transparent hover:text-white transition"

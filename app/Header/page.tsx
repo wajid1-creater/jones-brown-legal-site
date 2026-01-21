@@ -12,7 +12,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
 
         {/* LOGO */}
-        <Link href="/" className="flex items-center">
+        <Link href="" className="flex items-center">
           <img
             src="/assets/logo-.svg"
             alt=""
@@ -23,7 +23,7 @@ export default function Header() {
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-8 text-lg">
-          <Link href="/services">Services</Link>
+          <Link href="/Servicessection">Services</Link>
           <Link href="/consultation">Schedule a Consult</Link>
         </nav>
 
