@@ -10,7 +10,7 @@ export default function ServicesSectionPage() {
       {/* =========================
           HERO / EXPERIENCE SECTION
       ========================== */}
-      <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center">
+      <section className="relative w-full h-[30vh] md:h-[75vh] lg:h-[85vh] flex items-center">
         <Image
           src="/assets/image-5.png"
           alt="Experience Background"
@@ -170,7 +170,7 @@ export default function ServicesSectionPage() {
         </div>
       </section>
 
-      <Footer bgImage="/assets/image copy 7.png" />
+      <Footer bgImage="/assets/image copy 7.png " />
     </>
   );
 }
