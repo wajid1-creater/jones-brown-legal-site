@@ -1,4 +1,3 @@
-// app/hero/page.tsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -24,35 +23,31 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-[90vh]  bg-cover bg-center flex items-end md:items-center"
-      style={{ backgroundImage: "url('/assets/image copy.png')" }}
+      className="relative bg-cover bg-center w-full h-[30vh] sm:h-[60vh] md:h-[75vh] lg:h-[85vh]"
+      style={{ backgroundImage: "url('/assets/image -copy.png')" }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/30" />
 
-      {/* Content */}
+      {/* Content - fixed in place */}
       <div
         ref={heroRef}
-        className={`relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-white w-full 
-        mb-16 md:mb-0 ${animate ? "blink-once" : ""}`}
+        className={`absolute inset-0 flex flex-col justify-center items-start px-4 sm:px-6 md:px-12 text-white w-full ${animate ? "blink-once" : ""}`}
       >
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-wide mt-110">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight md:leading-[1.1]">
           Jones & Brown Legal
         </h1>
 
         {/* Bottom Row */}
-        <div className="flex flex-col md:flex-row w-full gap-6 md:items-end">
-
+        <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-8 mt-4 md:mt-6">
           {/* Left text */}
-          <p className="text-lg sm:text-xl md:text-3xl font-extrabold max-w-xl mt-15">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold max-w-full md:max-w-xl">
             Deep expertise, decisive courtroom presence
           </p>
 
-          <div className="flex-1" />
-
           {/* Right text */}
-          <p className="text-sm sm:text-base max-w-md">
+          <p className="text-sm sm:text-base md:text-lg max-w-full md:max-w-md mt-2 md:mt-0">
             We’ve been serving the Los Angeles area <br />
             with expert legal counsel since 1976.
           </p>

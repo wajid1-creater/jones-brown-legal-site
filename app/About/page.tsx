@@ -35,10 +35,10 @@ export default function AboutSection() {
         {/* Button */}
         <div className="mt-14 md:mt-16 text-center md:text-left">
           <Link
-            href="/consultation"
+            href="/schedule-consult"
             className="inline-block rounded-full bg-[#31120F] text-white 
             px-8 py-3.5 text-base md:text-lg font-sans
-            hover:bg-black transition"
+             transition"
           >
             Schedule a Consult
           </Link>

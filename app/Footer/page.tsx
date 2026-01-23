@@ -14,7 +14,7 @@ export default function Footer({
     <footer className="bg-[#F7f4EB] text-[#0D1F08]">
 
       {/* TOP IMAGE */}
-      <div className="relative w-full h-[50vh] md:h-[90vh]">
+      <div className="relative w-full h-[30vh] md:h-[75vh] lg:h-[85vh]">
         <Image
           src={bgImage}
           alt="Footer Background"

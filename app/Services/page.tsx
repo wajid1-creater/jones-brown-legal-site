@@ -9,9 +9,9 @@ export default function ServicesPreview() {
     <section className="relative bg-[#0D1F08] text-white pb-32">
 
       {/* TOP IMAGE */}
-      <div className="relative w-full h-[50vh] md:h-[60vh]">
+      <div className="relative  w-full h-[30vh] md:h-[75vh] lg:h-[85vh]">
         <Image
-          src="/assets/image copy 4.png"
+          src="/assets/image-11.png"
           alt="Legal Services"
           fill
           className="object-cover"

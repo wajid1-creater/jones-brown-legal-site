@@ -73,12 +73,24 @@ export default function Testimonials() {
 
             {/* LEFT ARROW */}
             <button
-              onClick={prevSlide}
-              className="text-2xl sm:text-3xl font-bold hover:scale-110 transition"
-              aria-label="Previous testimonial"
-            >
-              &#8592;
-            </button>
+  onClick={prevSlide}
+  aria-label="Previous testimonial"
+  className="hover:scale-105 transition  "
+>
+  <svg
+    width="25"
+    height="25"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.2"   // 👈 yahin se line patli / moti
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <line x1="19" y1="12" x2="5" y2="12" />
+    <polyline points="12 19 5 12 12 5" />
+  </svg>
+</button>
 
             {/* DOTS */}
             <div className="flex gap-2">
@@ -93,13 +105,26 @@ export default function Testimonials() {
             </div>
 
             {/* RIGHT ARROW */}
-            <button
-              onClick={nextSlide}
-              className="text-2xl sm:text-3xl font-bold hover:scale-110 transition"
-              aria-label="Next testimonial"
-            >
-              &#8594;
-            </button>
+           <button
+  onClick={nextSlide}
+  aria-label="Next testimonial"
+  className="hover:scale-105 transition"
+>
+  <svg
+    width="25"
+    height="25"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.2"   // 👈 line thickness control
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
+  </svg>
+</button>
+
           </div>
         </div>
 
@@ -111,7 +136,7 @@ export default function Testimonials() {
 
         {/* BUTTON */}
         <Link
-          href="/contact"
+          href="/schedule-consult"
           className="inline-block bg-[#31120f] text-white px-7 py-3 rounded-full text-base sm:text-lg transition hover:bg-black"
         >
           Schedule a Consult

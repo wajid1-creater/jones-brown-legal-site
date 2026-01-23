@@ -1,36 +1,34 @@
-// app/header/page.tsx
+// app/schedule-consult/ScheduleHeader.tsx
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
-export default function Header() {
-  const [open, setOpen] = useState(false);
-
+export default function ScheduleHeader() {
   return (
-    <header className="bg-[#0D1F08] text-white px-4 py-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <header className="bg-[#0D1F08] text-white px-4 sm:px-8 md:px-16 py-4 w-full shadow-md">
+      <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
 
         {/* LOGO */}
-        <Link href="" className="flex items-center">
-          <img
+        <Link href="/">
+          <Image
             src="/assets/logo-.svg"
-            alt=""
+            alt="Logo"
             width={50}
             height={40}
           />
         </Link>
 
-        {/* DESKTOP NAV */}
-        <nav className="hidden md:flex gap-8 text-lg">
-          <Link href="/Servicessection">Services</Link>
-          <Link href="/consultation">Schedule a Consult</Link>
+        {/* NAV ITEMS */}
+        <nav className="flex flex-wrap gap-6 text-sm sm:text-base md:text-lg font-sans">
+          <Link href="/Servicessection" className="">
+            Services
+          </Link>
+          <Link href="/schedule-consult" >
+            Schedule Consult
+          </Link>
         </nav>
 
-        {/* MOBILE BUTTON */}
-        <button onClick={() => setOpen(!open)} className="md:hidden text-2xl">
-          ☰
-        </button>
       </div>
     </header>
   );
