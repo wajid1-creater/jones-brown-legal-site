@@ -103,20 +103,20 @@ export default function ScheduleConsultPage() {
       items-start md:items-center
       gap-4
     ">
-      <h3 className="text-base sm:text-lg md:text-2xl font-semibold">
+      <h3 className="text-base sm:text-lg md:text-2xl font-sans ml-30">
         Discover how we can help
       </h3>
 
       <Link
         href="/schedule-consult"
         className="
-          md:ml-auto
+          
           bg-white text-black
           px-6 py-3
           rounded-full
           text-sm sm:text-base
-          transition-all
-          hover:bg-[#11BAB2] hover:text-white
+          ml-30
+         
         "
       >
         Schedule a Consult
